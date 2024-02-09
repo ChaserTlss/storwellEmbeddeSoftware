@@ -53,6 +53,30 @@ int test_case_3() {
 	check_result(numbers, result, colden_count, colden_result);
 }
 
+int test_case_4() {
+	unsigned int N = 8;
+	unsigned int M = 3;
+	const int colden_count = 5;
+	int colden_result[colden_count] = {3, 3, 2, 1, 1};
+
+	int numbers = 0;
+	int *result = calcPaper(N, M, &numbers);
+
+	check_result(numbers, result, colden_count, colden_result);
+}
+
+int test_case_5() {
+	unsigned int N = 0;
+	unsigned int M = 3;
+	const int colden_count = 0;
+	int colden_result[colden_count] = {};
+
+	int numbers = 0;
+	int *result = calcPaper(N, M, &numbers);
+
+	check_result(numbers, result, colden_count, colden_result);
+}
+
 int main() {
 	if (test_case_1() == 0) {
 		printf("test case 1 passed\n");
@@ -64,6 +88,14 @@ int main() {
 
 	if (test_case_3() == 0) {
 		printf("test case 3 passed\n");
+	}
+
+	if (test_case_4() == 0) {
+		printf("test case 4 passed\n");
+	}
+
+	if (test_case_5() == 0) {
+		printf("test case 5 passed\n");
 	}
 	return 0;
 }
