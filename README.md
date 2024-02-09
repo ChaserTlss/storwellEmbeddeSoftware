@@ -2,11 +2,15 @@
 
 This repo is for appling the embedded software engineer position at storwell
 
-## Install command
+## QUIZ
+
+## Quiz 1
+
+### Install command
 
 make all
 
-## Useage
+### Useage
 
 ./calcPaper {N} {M}
 PS: N and M must be positive integers
@@ -22,4 +26,7 @@ example:
 ./calcPaper 9 9
 9x9
 
+### TEST COMMAND
+
+make test
 
