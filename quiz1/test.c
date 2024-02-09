@@ -41,13 +41,29 @@ int test_case_2() {
 	check_result(numbers, result, colden_count, colden_result);
 }
 
+int test_case_3() {
+	unsigned int N = 9;
+	unsigned int M = 9;
+	const int colden_count = 1;
+	int colden_result[colden_count] = {9};
+
+	int numbers = 0;
+	int *result = calcPaper(N, M, &numbers);
+
+	check_result(numbers, result, colden_count, colden_result);
+}
+
 int main() {
 	if (test_case_1() == 0) {
-		printf("All test cases passed\n");
+		printf("test case 1 passed\n");
 	}
 
 	if (test_case_2() == 0) {
-		printf("All test cases passed\n");
+		printf("test case 2 passed\n");
+	}
+
+	if (test_case_3() == 0) {
+		printf("test case 3 passed\n");
 	}
 	return 0;
 }
