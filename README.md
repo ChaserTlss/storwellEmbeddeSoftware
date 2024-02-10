@@ -47,7 +47,7 @@ After that, I found this dictionary miss only one character, and it was '5', pos
 the Q2.b:
 1. f(30001) = GIF
 2. f(55555) = NOi
-3.f(77788) = VNQ
+3. f(77788) = VNQ
 
 the Q2.c:
 > 62 ** 3 - 1 = 238327
