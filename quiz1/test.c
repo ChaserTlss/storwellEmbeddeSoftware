@@ -4,18 +4,20 @@
 #include "calcPaper.h"
 
 #define check_result(number, result, colden_count, colden_result) \
-	if (number != colden_count) { \
-		printf("Test case failed: number != colden_count\n"); \
-		return 1; \
-	} \
-	for (int i = 0; i < number; i++) { \
-		if (result[i] != colden_result[i]) { \
-			printf("%s failed:[%d] result[%d] != colden_result[%d]\n", __func__, i, result[i], colden_result[i]); \
+	do { \
+		if (number != colden_count) { \
+			printf("Test case failed: number != colden_count\n"); \
 			return 1; \
 		} \
-	} \
-	free(result); \
-	return 0;
+		for (int i = 0; i < number; i++) { \
+			if (result[i] != colden_result[i]) { \
+				printf("%s failed:[%d] result[%d] != colden_result[%d]\n", __func__, i, result[i], colden_result[i]); \
+				return 1; \
+			} \
+		} \
+		free(result); \
+		return 0; \
+	} while (0)
 
 int test_case_1() {
 	unsigned int N = 6;
