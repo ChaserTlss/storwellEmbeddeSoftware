@@ -8,15 +8,16 @@ This repo is for appling the embedded software engineer position at storwell
 
 #### Install command
 
-make all
+`make all`
 
 #### Useage
 
-./calcPaper {N} {M}
+`./calcPaper {N} {M}`
 PS: N and M must be positive integers
 
 example:
 
+```
 ./calcPaper 6 5
 5x5, 1x1, 1x1, 1x1, 1x1, 1x1
 
@@ -25,10 +26,11 @@ example:
 
 ./calcPaper 9 9
 9x9
+```
 
 #### TEST COMMAND
 
-make test
+`make test`
 
 ### Quiz 2
 
@@ -43,10 +45,10 @@ Then I completed the character\_position dictionary by the first and the second 
 After that, I found this dictionary miss only one character, and it was '5', position 21.
 
 the Q2.b:
-f(30001) = GIF
-f(55555) = NOi
-f(77788) = VNQ
+1. f(30001) = GIF
+2. f(55555) = NOi
+3.f(77788) = VNQ
 
 the Q2.c:
-62 ** 3 - 1 = 238327
+> 62 ** 3 - 1 = 238327
 
