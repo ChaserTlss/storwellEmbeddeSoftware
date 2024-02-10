@@ -1,3 +1,4 @@
 *.o
 calcPaper
 calcPaperTest
+.DS_Store
